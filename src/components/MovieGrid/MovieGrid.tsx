@@ -17,7 +17,7 @@ export default function MovieGrid({ movies, onSelect }: MovieGridProps) {
             <img
               className={styles.image}
               src={`${IMAGE_BASE_URL}${movie.poster_path}`}
-              alt="movie title"
+              alt={movie.title}
               loading="lazy"
             />
             <h2 className={styles.title}>{movie.title}</h2>
